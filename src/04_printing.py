@@ -12,9 +12,9 @@ z = "I like turtles!"
 # y, and z:
 # x is 10, y is 2.25, z is "I like turtles!"
 # print(f"{x, y,z}")
-printf("hi there, i=%d, pi=%.2f\n", x, y)
+# printf("hi there, i=%d, pi=%.2f\n", x, y)
 
 # Use the 'format' string method to print the same thing
-print(format(x, y, z))
+# print(format(x, y, z))
 
 # Finally, print the same thing using an f-string
