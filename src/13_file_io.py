@@ -10,9 +10,12 @@ https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files
 # Note: pay close attention to your current directory when trying to open "foo.txt"
 
 # YOUR CODE HERE
-log = open('foo.txt').read()
-print(log)
+# log = open('foo.txt').read()
+# print(log)
 
+with open('foo.txt') as fp:
+    for line in fp:
+        print(line)
 # Open up a file called "bar.txt" (which doesn't exist yet) for
 # writing. Write three lines of arbitrary content to that file,
 # then close the file. Open up "bar.txt" and inspect it to make
@@ -22,5 +25,10 @@ print(log)
 f = open('bar.txt', 'w+')
 for i in range(3):
     f.write('Appended line %d\r\n' % (i+1))
+
+f.write("""
+Line1
+Line2
+Line 3""")
 
 f.close()
